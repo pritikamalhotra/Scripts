@@ -1,0 +1,4 @@
+#!/bin/bash
+find . -type f -name "*name*.txt" -exec grep -o -w Punjab {} \; | wc -w
+
+
