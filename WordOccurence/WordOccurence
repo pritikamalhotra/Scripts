@@ -1,4 +1,5 @@
 #!/bin/bash
 find . -type f -name "*name*.txt" -exec grep -o -w Punjab {} \; | wc -w
-
-
+#This gives total count of the word Punjab.
+find . -type f -name "*name*.txt" -exec grep -c Punjab {} \;
+#This gives count of the word Punjab in files separately.
