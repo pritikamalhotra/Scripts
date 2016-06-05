@@ -1,0 +1,9 @@
+#!/bin/bash
+# First try this
+mysql -u root -p
+GRANT ALL PRIVILEGES ON pritika_jportal.* TO 'pritika'@'localhost';
+#Then this is the second option
+
+USE pritika_jportal;
+SOURCE /home/pritika/public_html/create_tables.sql
+
